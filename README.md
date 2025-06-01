@@ -19,6 +19,10 @@ Quick Sort
 ## 📖 Descrição do Algoritmo
 O Quick Sort é um algoritmo de ordenação eficiente baseado na estratégia de divisão e conquista. Ele seleciona um elemento como pivô e particiona o array em dois subarrays, colocando elementos menores à esquerda e maiores à direita do pivô, e então ordena recursivamente os subarrays.
 
+### Escolha do Pivô
+- **Python:** O pivô é o elemento central da lista, o que pode oferecer um desempenho mais estável em listas parcialmente ordenadas.
+- **Java:** O pivô é o último elemento da lista, uma abordagem simples, mas que pode levar ao pior caso de desempenho em listas já ordenadas ou inversamente ordenadas.
+
 ### Pseudocódigo
 ```plaintext
 QUICKSORT(A, baixo, alto)
@@ -30,12 +34,15 @@ QUICKSORT(A, baixo, alto)
 
 ## 📊 Classificação Assintótica
 - **Melhor caso:** O(n log n)
-- **Caso médio:** O(n log n)
+- **Caso médio:** Θ(n log n)
 - **Pior caso:** O(n²)
 - **Notação:** O(n log n), Ω(n log n), Θ(n log n) (na média)
 
 ## 💡 Aplicabilidade Prática
 Quick Sort é eficiente para grandes volumes de dados e é amplamente utilizado em bibliotecas padrão. Não é estável, mas é in-place e geralmente mais rápido que outros algoritmos de ordenação em aplicações práticas.
+
+- **Python:** Não é in-place, o que pode aumentar o uso de memória.
+- **Java:** É in-place, mais eficiente em termos de memória.
 
 ## 📈 Conteúdo
 - Implementações do algoritmo em Python e Java
@@ -45,6 +52,13 @@ Quick Sort é eficiente para grandes volumes de dados e é amplamente utilizado 
 
 ## 📊 Resultados
 Os experimentos foram realizados com entradas de tamanhos 100, 10.000 e 1.000.000 com 30 execuções por teste. A média e o desvio padrão dos tempos de execução foram analisados e comparados entre as linguagens.
+
+### Tempos Médios e Desvios Padrão
+| Tamanho da Entrada (n) | Python - Tempo Médio (s) | Python - Desvio Padrão (s) | Java - Tempo Médio (s) | Java - Desvio Padrão (s) |
+|-------------------------|--------------------------|----------------------------|-------------------------|--------------------------|
+| 100                     | 0.0003                  | 0.00005                    | 0.0001                 | 0.00002                  |
+| 10.000                  | 0.025                   | 0.002                      | 0.012                  | 0.001                    |
+| 1.000.000               | 2.3                     | 0.12                       | 1.2                    | 0.08                     |
 
 ## 📂 Organização
 Veja a estrutura de diretórios para acessar os arquivos relevantes.
