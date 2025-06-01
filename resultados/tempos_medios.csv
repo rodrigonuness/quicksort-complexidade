@@ -1,0 +1,7 @@
+Tamanho,Linguagem,Tempo Medio (s),Desvio Padrão (s)
+100,Python,0.0003,0.00005
+10000,Python,0.025,0.002
+1000000,Python,2.3,0.12
+100,Java,0.0001,0.00002
+10000,Java,0.012,0.001
+1000000,Java,1.2,0.08
