@@ -16,6 +16,27 @@ Quick Sort
 - Python
 - Java
 
+## 📖 Descrição do Algoritmo
+O Quick Sort é um algoritmo de ordenação eficiente baseado na estratégia de divisão e conquista. Ele seleciona um elemento como pivô e particiona o array em dois subarrays, colocando elementos menores à esquerda e maiores à direita do pivô, e então ordena recursivamente os subarrays.
+
+### Pseudocódigo
+```plaintext
+QUICKSORT(A, baixo, alto)
+    se baixo < alto
+        pivo ← PARTITION(A, baixo, alto)
+        QUICKSORT(A, baixo, pivo-1)
+        QUICKSORT(A, pivo+1, alto)
+```
+
+## 📊 Classificação Assintótica
+- **Melhor caso:** O(n log n)
+- **Caso médio:** O(n log n)
+- **Pior caso:** O(n²)
+- **Notação:** O(n log n), Ω(n log n), Θ(n log n) (na média)
+
+## 💡 Aplicabilidade Prática
+Quick Sort é eficiente para grandes volumes de dados e é amplamente utilizado em bibliotecas padrão. Não é estável, mas é in-place e geralmente mais rápido que outros algoritmos de ordenação em aplicações práticas.
+
 ## 📈 Conteúdo
 - Implementações do algoritmo em Python e Java
 - Scripts para geração de entrada e medição de tempo
@@ -92,4 +113,15 @@ deactivate
 ```
 
 ## 📎 Relatório
-Veja o [Relatório Final](Relatorio_QuickSort_Entrega2.pdf)
+Veja o [Relatório Final](Relatorio_QuickSort_Entrega2.pdf), que contém:
+- Explicação teórica detalhada
+- Análise de complexidade (melhor, pior, média)
+- Discussão sobre aplicabilidade e reflexões finais (classe P, NP, etc)
+- Resultados práticos, gráficos e tabelas
+- Código-fonte dos algoritmos e scripts
+
+## 🧠 Reflexão Final
+O Quick Sort pertence à classe P, pois pode ser resolvido em tempo polinomial. Não há versão NP do problema de ordenação, mas problemas de ordenação parcial podem estar relacionados a problemas NP-completos em outros contextos.
+
+## 📁 Código-fonte
+Todo o código-fonte está disponível neste repositório, incluindo implementações, scripts de geração de entrada, análise de tempo e geração de gráficos.
