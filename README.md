@@ -139,7 +139,7 @@ deactivate
 ```
 
 ## 📎 Relatório
-Veja o [Relatório Final](Relatorio_QuickSort_Entrega2.pdf), que contém:
+Veja o [Relatório Final](Relatório-Final-Quicksort.pdf), que contém:
 - Explicação teórica detalhada
 - Análise de complexidade (melhor, pior, média)
 - Discussão sobre aplicabilidade e reflexões finais (classe P, NP, etc)
