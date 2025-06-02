@@ -30,6 +30,16 @@ QUICKSORT(A, baixo, alto)
         pivo ← PARTITION(A, baixo, alto)
         QUICKSORT(A, baixo, pivo-1)
         QUICKSORT(A, pivo+1, alto)
+
+PARTITION(A, baixo, alto)
+    pivo ← A[alto]
+    i ← baixo - 1
+    para j ← baixo até alto-1
+        se A[j] ≤ pivo
+            i ← i + 1
+            trocar A[i] e A[j]
+    trocar A[i+1] e A[alto]
+    retornar i+1
 ```
 
 ## 📊 Classificação Assintótica
@@ -137,7 +147,9 @@ Veja o [Relatório Final](Relatorio_QuickSort_Entrega2.pdf), que contém:
 - Código-fonte dos algoritmos e scripts
 
 ## 🧠 Reflexão Final
-O Quick Sort pertence à classe P, pois pode ser resolvido em tempo polinomial. Não há versão NP do problema de ordenação, mas problemas de ordenação parcial podem estar relacionados a problemas NP-completos em outros contextos.
+O Quick Sort pertence à classe P, pois pode ser resolvido em tempo polinomial. A classe P representa problemas que podem ser resolvidos em tempo polinomial por um algoritmo determinístico. Já a classe NP representa problemas cujas soluções podem ser verificadas em tempo polinomial, mas não necessariamente resolvidas nesse tempo. 
+
+Embora o problema de ordenação não tenha uma versão NP, ele está relacionado a problemas NP-completos em outros contextos, como ordenação parcial ou problemas de otimização. Isso reforça a importância de algoritmos eficientes como o Quick Sort em aplicações práticas.
 
 ## 📁 Código-fonte
 Todo o código-fonte está disponível neste repositório, incluindo implementações, scripts de geração de entrada, análise de tempo e geração de gráficos.

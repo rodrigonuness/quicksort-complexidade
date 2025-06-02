@@ -28,10 +28,20 @@ QUICKSORT(A, baixo, alto)
         pivo ← PARTITION(A, baixo, alto)
         QUICKSORT(A, baixo, pivo-1)
         QUICKSORT(A, pivo+1, alto)
+
+PARTITION(A, baixo, alto)
+    pivo ← A[alto]
+    i ← baixo - 1
+    para j ← baixo até alto-1
+        se A[j] ≤ pivo
+            i ← i + 1
+            trocar A[i] e A[j]
+    trocar A[i+1] e A[alto]
+    retornar i+1
 ```
 
 ### Falas:
-"O Quick Sort é um algoritmo de ordenação baseado na estratégia de divisão e conquista. Ele escolhe um elemento como pivô, particiona a lista em dois subconjuntos e aplica recursivamente o mesmo processo até que a lista esteja ordenada. Aqui está o pseudocódigo que representa o funcionamento básico do algoritmo."
+"O Quick Sort é um algoritmo de ordenação baseado na estratégia de divisão e conquista. Ele escolhe um elemento como pivô, particiona a lista em dois subconjuntos e aplica recursivamente o mesmo processo até que a lista esteja ordenada. Aqui está o pseudocódigo que representa o funcionamento básico do algoritmo, incluindo a função PARTITION, que realiza o particionamento da lista."
 
 ---
 
@@ -50,6 +60,7 @@ QUICKSORT(A, baixo, alto)
 - **Entradas:** 100, 10.000, 1.000.000 elementos
 - **Execuções:** 30 por teste
 - **Tempos Médios e Desvios Padrão:**
+
 | Tamanho da Entrada (n) | Python - Tempo Médio (s) | Python - Desvio Padrão (s) | Java - Tempo Médio (s) | Java - Desvio Padrão (s) |
 |-------------------------|--------------------------|----------------------------|-------------------------|--------------------------|
 | 100                     | 0.0003                  | 0.00005                    | 0.0001                 | 0.00002                  |
@@ -90,5 +101,5 @@ QUICKSORT(A, baixo, alto)
   - Comparar com outros algoritmos de ordenação
 
 ### Falas:
-"Para concluir, o Quick Sort pertence à classe P, sendo resolvido em tempo polinomial. Ele é eficiente na prática, mas pode ser otimizado com escolhas melhores de pivô. Os resultados obtidos foram consistentes com a teoria, e os gráficos e tabelas mostram claramente a relação entre o tamanho da entrada e o desempenho. Como próximos passos, podemos explorar outras estratégias de escolha de pivô e comparar o Quick Sort com outros algoritmos de ordenação."
+"Para concluir, o Quick Sort pertence à classe P, sendo resolvido em tempo polinomial. A classe P representa problemas que podem ser resolvidos em tempo polinomial por um algoritmo determinístico. Já a classe NP representa problemas cujas soluções podem ser verificadas em tempo polinomial, mas não necessariamente resolvidas nesse tempo. Embora o problema de ordenação não tenha uma versão NP, ele está relacionado a problemas NP-completos em outros contextos, como ordenação parcial ou problemas de otimização. Isso reforça a importância de algoritmos eficientes como o Quick Sort em aplicações práticas."
 
