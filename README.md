@@ -5,8 +5,8 @@
 Trabalho da disciplina **Teoria da Computação** (Professores Pâmela e Daniel)
 
 ## 👨‍💻 Integrantes
-- Luca Santos
-- Luca Souto
+- Lucas Santos
+- Lucas Souto
 - Rodrigo Nunes
 
 ## 📌 Algoritmo
@@ -49,6 +49,8 @@ Quick Sort é eficiente para grandes volumes de dados e é amplamente utilizado 
 - Scripts para geração de entrada e medição de tempo
 - Gráficos e análise comparativa
 - Relatório final em PDF
+- [Apresentação de Slides](https://www.canva.com/design/DAGndgFR97g/f_8_5WGxRTe1lm0kUucPRQ/edit?utm_content=DAGndgFR97g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Guia de Apresentação](apresentacao/apresentacao.md)
 
 ## 📊 Resultados
 Os experimentos foram realizados com entradas de tamanhos 100, 10.000 e 1.000.000 com 30 execuções por teste. A média e o desvio padrão dos tempos de execução foram analisados e comparados entre as linguagens.
