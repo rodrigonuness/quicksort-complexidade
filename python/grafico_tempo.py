@@ -12,7 +12,6 @@ desvios_java = [0.00002, 0.001, 0.08]
 melhor_caso = [n * np.log2(n) for n in tamanhos]  # O(n log n)
 pior_caso = [n**2 for n in tamanhos]  # O(n²)
 
-# Normalizar curvas teóricas para escala comparável
 melhor_caso_normalizado = [x / max(melhor_caso) * max(tempos_python) for x in melhor_caso]
 pior_caso_normalizado = [x / max(pior_caso) * max(tempos_python) for x in pior_caso]
 
@@ -31,7 +30,6 @@ plt.grid(True, which="both", ls="--", lw=0.5)
 plt.tight_layout()
 plt.savefig('python_vs_teorico.png')
 
-# Normalizar curvas teóricas para escala comparável (Java)
 melhor_caso_normalizado_java = [x / max(melhor_caso) * max(tempos_java) for x in melhor_caso]
 pior_caso_normalizado_java = [x / max(pior_caso) * max(tempos_java) for x in pior_caso]
 

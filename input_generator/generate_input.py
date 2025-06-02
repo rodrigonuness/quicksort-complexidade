@@ -5,7 +5,6 @@ def gerar_lista(tamanho, limite=1000000):
     return [random.randint(0, limite) for _ in range(tamanho)]
 
 if __name__ == "__main__":
-    # Caminho do diretório raiz do projeto
     raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     for tamanho in [100, 10000, 1000000]:
         lista = gerar_lista(tamanho)
